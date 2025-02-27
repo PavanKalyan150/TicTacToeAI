@@ -193,7 +193,7 @@ const handleClick = (e) => {
     e.target.style.backgroundColor = 'rgb(250, 44, 44)';
 
     if (checkWin('X')) {
-        setTimeout(() => alert('X wins!'), 100);
+        setTimeout(() => alert('Player wins!'), 100);
         return;
     }
 
@@ -206,7 +206,7 @@ const handleClick = (e) => {
     setTimeout(() => {
         aiMove();
         if (checkWin('O')) {
-            setTimeout(() => alert('O wins!'), 100);
+            setTimeout(() => alert('AI wins!'), 100);
             return;
         }
 
